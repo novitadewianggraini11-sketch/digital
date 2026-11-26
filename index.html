@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BijakDigital - Solusi Dampak Informatika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasi -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bijak<span>Digital</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#dampak">Dampak & Solusi</a></li>
+                    <li><a href="#cek-kebiasaan">Cek Kebiasaan</a></li>
+                    <li><a href="#kuis">Kuis Literasi</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="btn-outline" title="Ubah Tema">🌙</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Menghadapi Era Digital dengan Cerdas & Aman</h1>
+            <p>Informatika membawa kemajuan pesat, namun juga tantangan baru. Temukan solusi praktis untuk mengatasi dampak negatif teknologi dalam kehidupan sehari-hari.</p>
+            <a href="#dampak" class="btn-primary">Jelajahi Solusi</a>
+        </div>
+    </section>
+
+    <!-- Bagian Dampak & Solusi -->
+    <section id="dampak" class="section container">
+        <h2 class="section-title">Permasalahan & Solusi Informatika</h2>
+        <p class="section-subtitle">Pilih kategori di bawah ini untuk melihat analisis dampak dan langkah solusinya.</p>
+
+        <!-- Filter Tab -->
+        <div class="tabs">
+            <button class="tab-btn active" data-category="all">Semua</button>
+            <button class="tab-btn" data-category="keamanan">Keamanan Data</button>
+            <button class="tab-btn" data-category="sosial">Sosial & Informasi</button>
+            <button class="tab-btn" data-category="kesehatan">Kesehatan Digital</button>
+        </div>
+
+        <!-- Grid Kartu Solusi (Diisi otomatis oleh JavaScript) -->
+        <div id="solutions-grid" class="grid-container"></div>
+    </section>
+
+    <!-- Kalkulator Screen Time -->
+    <section id="cek-kebiasaan" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Cek Kesehatan Screen Time Kamu</h2>
+            <p class="section-subtitle">Masukkan rata-rata durasi penggunaan gawai (HP/Laptop) di luar jam belajar atau kerja per hari.</p>
+            
+            <div class="calculator-box">
+                <label for="hours-input">Durasi Penggunaan Hiburan (Jam/Hari):</label>
+                <input type="number" id="hours-input" min="0" max="24" placeholder="Contoh: 4">
+                <button id="check-time-btn" class="btn-primary">Analisis Sekarang</button>
+                <div id="time-result" class="result-box hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuis Singkat -->
+    <section id="kuis" class="section container">
+        <h2 class="section-title">Uji Kepekaan Digitalmu</h2>
+        <div class="quiz-box">
+            <p id="quiz-question" class="quiz-question">Memuat pertanyaan...</p>
+            <div id="quiz-options" class="quiz-options"></div>
+            <p id="quiz-feedback" class="quiz-feedback"></p>
+            <button id="next-quiz-btn" class="btn-outline hidden">Pertanyaan Berikutnya</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 BijakDigital - Edukasi Dampak Sosial Informatika.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
